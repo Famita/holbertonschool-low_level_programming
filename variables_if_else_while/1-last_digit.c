@@ -6,6 +6,10 @@
 
 /* betty style doc for function main goes there */
 
+/*main - fonction*/
+
+/* return - fonction*/
+
 int main(void)
 {
 	int n;

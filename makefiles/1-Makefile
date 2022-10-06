@@ -1,0 +1,5 @@
+CC = gcc
+SRC = $(willcard *.c)
+
+	
+$(CC) $(SRC) -o school

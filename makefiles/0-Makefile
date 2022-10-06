@@ -1,2 +1,7 @@
+all : prog
+
+prog : school
+	gcc -o prog school
+
 school : school.c
 	gcc main.c school.c -o school

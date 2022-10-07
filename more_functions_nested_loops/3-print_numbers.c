@@ -1,16 +1,17 @@
 #include "main.h"
+
 /**
- * print_numbers - Retry point
+ * _islower - Entry point
+ * @c: int
  *
  * Return: 0
  */
-void print_numbers(void)
+int _islower(int c)
 {
-	int a;
-
-	for (a = 48; a <= 57; a++)
+	if (c >= 'a' && c <= 'z')
 	{
-		_putchar(a);
+		return (1);
 	}
-		_putchar('\n');
+	return (0);
+
 }

@@ -1,31 +1,24 @@
 #include "main.h"
 /**
-   *print_diagonal - function that drow a diagonal on the terminal
-    *@n: int
-     *Return: Always 0
+   * print_square- Prints a square
+    * @size: size of the square
+     * Return: # in form of square
       */
-void print_diagonal(int n)
+void print_square(int size)
 {
-	int a = 0;
-	int b = 0;
+	int width, length;
 
-	if (n > 0)
+	if (size > 0)
 	{
-		while (a < n)
+		for (width = 0 ; width < size ; width++)
 		{
-			while (b < a)
+			for (length = 0 ; length < size ; length++)
 			{
-				_putchar(' ');
-				b++;
+				_putchar('#');
 			}
-			a++;
-			b = 0;
-			_putchar('\\');
-			_putchar('\n');
-		}
-	}
-	else
-	{
 		_putchar('\n');
-	}
+		}
+	}	
+	else
+		_putchar('\n');
 }

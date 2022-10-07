@@ -1,17 +1,15 @@
 #include "main.h"
-
 /**
- * _islower - Entry point
- * @c: int
- *
- * Return: 0
+ * print_numbers- Print numbers
+ * Return: Numbers from 0 to 9
  */
-int _islower(int c)
+void print_numbers(void)
 {
-	if (c >= 'a' && c <= 'z')
-	{
-		return (1);
-	}
-	return (0);
+	int n;
 
+	for (n = 0 ; n <= 9 ; n++)
+	{
+		_putchar(n + '0');
+	}
+	_putchar('\n');
 }

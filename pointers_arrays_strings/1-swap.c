@@ -1,17 +1,16 @@
 #include "main.h"
 /**
-* _strlen - This report, by its very length, defends itself against the risk
-*
-* @s: The string to get the length of.
-*
-* Return: The length of @str.
-*/
+   * swap_int -  Don't swap horses in crossing a stream
+    *
+     * @a: variable1
+      * @b: variable2
+       * Return: 0
+        */
 
-int _strlen(char *s)
+void swap_int(int *a, int *b)
 {
-	int a;
+	int cvvar = *a;
+	*a = *b;
+	*b = cvvar;
 
-	for (a = 0; s[a] != '\0'; a++)
-		;
-		return (a);
 }
